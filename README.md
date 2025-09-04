@@ -1,2 +1,49 @@
 # WhiteBoard-Digital-Notes-Converter
 A Python tool that converts handwritten whiteboard notes into clean, editable text and exports them as Word documents.
+## Features
+- 📸 Convert images of whiteboard notes into text
+- 📝 Export the output as a **.docx** file for easy editing and sharing
+- ⚡ Lightweight and fast processing
+- 🖇️ Supports multiple image formats including **PNG** and **JPEG**
+
+## Tech Stack
+- **Python 3.9**
+- **OpenCV** for image processing
+- **Tesseract OCR** for text recognition
+- **python-docx** for generating Word documents
+
+## Installation
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/whiteboard-notes-converter.git
+   ```
+
+2. Navigate to the project folder:
+   ```bash
+   cd whiteboard-notes-converter
+   ```
+
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Install [Tesseract OCR](https://github.com/UB-Mannheim/tesseract/wiki) and add it to your PATH.
+
+## Usage
+1. Place your whiteboard image (e.g., `notes.png`) in the project folder.
+2. Run the script:
+   ```bash
+   python smart_whiteboard.py
+   ```
+3. The generated Word document will be saved as `output.docx`.
+
+## Example
+**Input:** Whiteboard image containing handwritten notes
+
+**Output:** A clean, editable Word document with recognized text
+
+## Use Cases
+- Capture class notes directly into Word format
+- Save and organize meeting notes
+- Digitize handwritten brainstorming sessions
