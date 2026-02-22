@@ -20,9 +20,10 @@ with open("notes.txt", "w", encoding="utf-8") as f:
     f.write(text)
 doc = Document()
 for line in text.split("\n"):
-    if line.strip():  # skip empty lines
+    if line.strip():  
         doc.add_paragraph(line)
 doc.save("notes.docx")
 
 print("✅ OCR complete! Text saved as notes.txt and notes.docx")
+
 
